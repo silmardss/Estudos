@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@font-face {
+    font-family: retro;
+    src: url(Fonts/Retro\ Gaming.ttf) format('opentype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: fallout1;
+    src: url(Fonts/SoleSurvivor.ttf) format('opentype');
+    font-weight: normal;
+}
+body{
+    background-color: #c7d6ca;
+    
+}
+header{
+    background-color: white;
+    padding: 20px;
+    margin: 5px 30px 20px 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.041);
+    }
+nav{
+    text-align: center;
+}
+nav > a{
+text-decoration: none;
+padding-right: 20px;
+
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+nav>a:active{
+    color: gold;
+}
+main{
+    background-color: white;
+    padding: 1px;
+    margin: 0px 30px 5px 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.041);
+}
+h1{
+    color: #6253B8;
+    font: normal 600 42px fallout1;
+    text-align: center;
+   
+}
+h2{
+
+    font: normal 600 28px retro;
+    color: #98B85E;
+    height: 20px;
+}
+h3{
+    font: normal 700 18px arial, verdana, serif;
+    height: 14px;
+}
+p{
+    font: normal 700 12px verdana, arial, serif;
+    text-align: justify;
+}
+.direct{
+    font: normal 200 18px fallout1;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding-right: 50px;
+    margin: 0 30px 5px 30px;
+}
+footer>p{
+    margin: 0px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imaguem dinâmica</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente criar esse site em varios dispositivos diferentes</p>
+     <p>ou simplesmente almente ou diminua o tamanho do seu navegador</p>
+    
+     <picture>
+        <source media="(max-width: 750px)" srcset="300px.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="600px.jpg" type="image/jpg">
+        <img src="../morro 1200.jpg" alt="imagem flecsivel">
+     </picture>
+     <!--<h1>Reprudusindo audios</h1>
+     <p>Vamos aprender a usar audios em html5.</p>
+     <audio src="../midia/Ethan.mp3" controls autoplay></audio>>
+     Temos os formatos MP3 OGG e WAV-->
+     <p>Outra forma de adicionar audio</p>
+     <audio preload="metadata" autoplay controls loop>
+        <source src="../midia/Ethan.mp3" type="audio/mpeg">
+        <source src="../midia/Ethan.mp3" type="audio/ogg">
+        <source src="../midia/Ethan.mp3" type="audio/wav"><!--WAV são arquivos muito grande e pesados-->
+        <p>infelizmente seu navegador nao suporta o audio</p>
+        <p><a href="../midia/Ethan.mp3" target="_top" rel="external">Clique aqui para baixa-lo</a> </p>
+     </audio>
+</body>
+</html>

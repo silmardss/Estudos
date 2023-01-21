@@ -18,9 +18,10 @@
 .nome{
     width: 150px;
 }
-.titulo{
+th{
     font-weight: bolder;
     text-align: center;
+    border: 1px solid black;
 }
         td{
             border: 1px solid black;
@@ -32,12 +33,12 @@
 <body>
     <table>
         <tr>
-            <td class="titulo">Grupo</td>
-            <td colspan="2" class="titulo">Nomes</td>
-            <td colspan="2" class="titulo">Filmes</td>
+            <th scope="col">Grupo</th>
+            <th scope="col" colspan="2">Nomes</th>
+            <th scope="colgroup" colspan="2">Filmes</th>
         </tr>
         <tr>
-            <td rowspan="3" class="titulo">Mulheres</td>
+            <th scope="rowgroup" rowspan="3">Mulheres</th>
             <td class="nome">Ana Maria Santos</td>
             <td>Alien</td>
             <td>Rambo</td>
@@ -56,7 +57,7 @@
             <td>Big Hero</td>
         </tr>
         <tr>
-            <td rowspan="3" class="titulo">Homens</td>
+            <th scope="rowgroup" rowspan="3">Homens</th>
             <td class="nome">Bruno Mendonça</td>
             <td>Intocáveis</td>
             <td>Amnésia</td>
@@ -72,6 +73,10 @@
             <td>Star Wars 5</td>
             <td>Taxi Driver</td>
             <td>Toy story</td>
+        </tr>
+        <tr>
+            <th scope="row"  colspan="4">Total</td>
+            <td>1000</td>
         </tr>
     </table>
 </body>

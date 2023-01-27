@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Texte de formulario</title>
+    <title>Document</title>
 </head>
 <body>
     <h1>Teste de formulario</h1>
-    <form action="cadastro.php" autocomplete="off" method="post"></form>
-    <p>
-        <label for="iusu">Ususario: </label>
-        <input type="text" name="usu" id="iusu" required>
-    </p>
-    <p>
-        <label for="isenha">Senha:</label>
-        <input type="password" name="senha" id="isenha" required>
-    </p>
-    <input type="submit" value="Enviar">
-    <input type="reset" value="Limpar">
+    <form action="form002.html" method="post" autocomplete="on" >
+        <p>
+            <label for="iusu">Usuario:</label>
+            <input type="text" name="usu" id="iusu" autocomplete="username" minlength="3" maxlength="30" placeholder="nome do usuario">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" autocomplete="current-password" minlength="8" maxlength="20" placeholder="mínimo 8 caracter">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
 </body>
 </html>

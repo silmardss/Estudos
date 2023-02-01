@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+      <p>
+        <label for="iest">Estado</label>
+        <select name="estado" id="iestado">
+            <option value="" selected>--Escolha--</option>
+            <optgroup label="Região Sudeste">
+                <option value="RJ">Rio de janeiro</option>
+                <option value="SP">São Paulo</option>
+                <option value="MG">Minas Gerais</option>
+            </optgroup>
+
+            <optgroup label="Região Norte">
+                <option value="AM">Amazonas</option>
+                <option value="AC">Acre</option>
+                <option value="PA">Pará</option>
+            </optgroup>
+
+            <optgroup label="Região Sul">
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="PR">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+            </optgroup>
+        </select>
+        <p>
+            <label for="iprof">Profição</label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option>Administrador</option>
+                <option>Cosinheiro</option>
+                <option>Pescador</option>
+                <option>Fuleiro</option>
+            </datalist>
+
+        </p>
+      </p>  
+      <input type="submit" value="Pega o beco">
+      <input type="reset" value="Ti sai">
+    </form>
+    
+    
+</body>
+</html>

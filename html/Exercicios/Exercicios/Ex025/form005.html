@@ -9,12 +9,25 @@
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <fieldset>
-        <legend>Esportes favoritos</legend>
-        <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label> <br>
-        <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label> <br>
-        <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natação</label> <br>
-        <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tenis</label> <br>
-    </fieldset>
+    
+        <form action="cadastro.php" target="_blank" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="sxmas" value="M"><label for="sexo">Masculino</label> <br>
+                <input type="radio" name="sexo" id="isxfem" value="F"><label for="sexo">Femenino</label> <br>
+                <input type="radio" name="sexo" id="isxout" checked value="O"><label for="sexo" >Outro</label>
+            </fieldset>
+            <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esfut" id="iesfut" checked><label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tenis</label> <br>
+            </fieldset>
+        </form>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
 </body>
 </html>

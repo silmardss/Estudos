@@ -10,8 +10,33 @@ Telas grandes:acima de 1200px
 
 */
 
-@media print /*Impressão*/{
-    
+@media print {/*Impressão*/
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+    background-image: url(../imaguens/back-print.jpg);
+    }
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+    main::after{
+        content:'Essa inpressão foi criada pelo cite do www.cursoemvideo.com';
+        text-decoration: overline;
+    }    
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+
+
+
 }
 @media screen and (min-width:769px) and (max-width: 992px) {/*Tablets*/
 body{

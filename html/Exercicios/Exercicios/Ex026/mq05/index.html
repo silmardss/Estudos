@@ -12,10 +12,10 @@
 <body>
     <header>
         <h1>Meu site</h1>
-        <span id="burguer" class="material-symbols-outlined">
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
             menu
             </span>
-        <menu>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -31,6 +31,14 @@
             <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit labore provident deserunt nam non, recusandae doloremque error quia voluptate eveniet soluta corporis numquam! Fuga molestias, quod tempora voluptates velit animi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam sequi labore modi cum id inventore exercitationem laboriosam officia iure ad itaque dicta soluta blanditiis tempora vero, a assumenda quibusdam magnam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque veniam animi eius nesciunt sed dicta consequatur quas harum dolorum voluptate, aperiam esse eum omnis cum a necessitatibus minima nostrum natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga officiis doloribus odit corporis nam, nostrum ullam iusto placeat. Voluptas voluptate iusto amet, placeat nostrum quisquam numquam dolore. Commodi, perspiciatis suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo magni modi quidem facilis, omnis nemo nostrum, earum incidunt vero nulla eaque, nesciunt similique iusto et harum distinctio est optio atqu Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quia sequi, soluta amet esse similique fugiat eveniet voluptas, at necessitatibus vitae praesentium impedit dignissimos deleniti eaque commodi harum inventore. Consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat harum earum quas voluptate expedita dolore fuga autem dolor ipsa ab! Possimus beatae voluptates veritatis dolores aut ut minima quam saepe.</p>
         </article>
     </main>
-    
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }   
+        }
+    </script>
 </body>
 </html>
